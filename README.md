@@ -1,53 +1,108 @@
-# Getting Started with Create React App
+# Organo - Site Profissional da Equipe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um site profissional desenvolvido em React para apresentar nossa equipe, projetos e serviços.
 
-## Available Scripts
+## 🚀 Funcionalidades
 
-In the project directory, you can run:
+- **Header com Navegação**: Menu responsivo com navegação suave entre seções
+- **Hero Section**: Apresentação principal com call-to-actions
+- **Sobre Nós**: Seção descrevendo missão, visão e valores da equipe
+- **Nossa Equipe**: Galeria profissional dos membros com links para GitHub e LinkedIn
+- **Projetos**: Showcase dos projetos desenvolvidos pela equipe
+- **Contato**: Formulário de contato funcional
+- **Footer**: Informações de contato e links para redes sociais
+- **Design Responsivo**: Otimizado para dispositivos móveis e desktop
 
-### `npm start`
+## 🛠️ Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 19.1.0** - Biblioteca principal para desenvolvimento da interface
+- **React Router DOM** - Navegação entre componentes
+- **Lucide React** - Biblioteca de ícones moderna e elegante
+- **CSS3** - Estilização avançada com gradientes e animações
+- **HTML5** - Estrutura semântica
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Estrutura do Projeto
 
-### `npm test`
+```
+src/
+├── components/
+│   ├── Header/          # Cabeçalho com navegação
+│   ├── Hero/            # Seção principal
+│   ├── About/           # Sobre nós
+│   ├── Team/            # Equipe
+│   ├── Projects/        # Projetos
+│   ├── Contact/         # Contato
+│   └── Footer/          # Rodapé
+├── App.js               # Componente principal
+├── App.css              # Estilos globais
+└── index.js             # Ponto de entrada
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Como Executar
 
-### `npm run build`
+1. **Clone o repositório**
+   ```bash
+   git clone [URL_DO_REPOSITORIO]
+   cd organo
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Execute o projeto**
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Acesse no navegador**
+   ```
+   http://localhost:3000
+   ```
 
-### `npm run eject`
+## 📱 Responsividade
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O site foi desenvolvido com design responsivo, garantindo uma experiência otimizada em:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (até 767px)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Paleta de Cores**: Gradientes azul/roxo com detalhes em dourado
+- **Tipografia**: Segoe UI para melhor legibilibilidade
+- **Animações**: Transições suaves e efeitos hover
+- **Layout**: Grid e Flexbox para estruturas flexíveis
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚡ Performance
 
-## Learn More
+- Carregamento otimizado de imagens
+- CSS modular por componente
+- Navegação suave entre seções
+- Código limpo e bem estruturado
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👥 Equipe
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **João Paulo** - Full Stack Developer
+- **Gabriel** - Frontend Developer  
+- **GK** - Backend Developer
+- **Nicolas** - DevOps Engineer
+- **Vitu** - Mobile Developer
 
-### Code Splitting
+## 📞 Contato
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Email**: contato@organo.dev
+- **Telefone**: +55 (11) 99999-9999
+- **Localização**: São Paulo, SP - Brasil
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+⭐ **Desenvolvido com ❤️ pela equipe Organo**
 
 ### Analyzing the Bundle Size
 
