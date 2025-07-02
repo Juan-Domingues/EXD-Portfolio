@@ -48,7 +48,7 @@
 
 .contact-subtitle {
   text-align: center;
-  color: #6c757d;
+  color: var(--text-secondary);  /* Usando a variável da nossa paleta */
   font-size: 1.2rem;
   margin-bottom: 4rem;
   max-width: 600px;

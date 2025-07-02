@@ -5,26 +5,26 @@
 }
 
 :root {
-  /* Nova paleta de cores */
-  --color-light-gray: #F2F2F2;
+  /* Nova paleta de cores ajustada */
+  --color-light-gray: #F8F6F2;  /* Branco mais bege/creme */
   --color-cream: #EAE4D5;
   --color-brown: #B6B09F;
-  --color-black: #000000;
+  --color-black: #1a1a1a;  /* Preto mais suave */
   
   /* Variáveis de tema light */
-  --bg-primary: #ffffff;
+  --bg-primary: #FEFCF9;  /* Fundo principal com tom bege muito suave */
   --bg-secondary: var(--color-light-gray);
   --bg-accent: var(--color-cream);
-  --text-primary: var(--color-black);
-  --text-secondary: #666666;
-  --text-accent: var(--color-brown);
-  --border-color: rgba(182, 176, 159, 0.2);
-  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
-  --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.12);
-  --shadow-heavy: 0 20px 50px rgba(0, 0, 0, 0.15);
-  --gradient-primary: linear-gradient(135deg, var(--color-brown) 0%, var(--color-black) 100%);
+  --text-primary: #2c2c2c;  /* Texto principal mais escuro para melhor contraste */
+  --text-secondary: #5a5a5a;  /* Texto secundário com melhor legibilidade */
+  --text-accent: #8B7F6B;  /* Brown mais escuro para melhor contraste */
+  --border-color: rgba(182, 176, 159, 0.25);
+  --shadow-light: 0 5px 15px rgba(44, 44, 44, 0.08);
+  --shadow-medium: 0 10px 30px rgba(44, 44, 44, 0.12);
+  --shadow-heavy: 0 20px 50px rgba(44, 44, 44, 0.15);
+  --gradient-primary: linear-gradient(135deg, #8B7F6B 0%, #2c2c2c 100%);
   --gradient-light: linear-gradient(135deg, var(--color-cream) 0%, var(--color-light-gray) 100%);
-  --gradient-hero: linear-gradient(135deg, var(--color-black) 0%, #333333 100%);
+  --gradient-hero: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
 }
 
 [data-theme="dark"] {
@@ -41,7 +41,7 @@
   --shadow-heavy: 0 20px 50px rgba(0, 0, 0, 0.5);
   --gradient-primary: linear-gradient(135deg, var(--color-brown) 0%, var(--color-cream) 100%);
   --gradient-light: linear-gradient(135deg, #404040 0%, #2d2d2d 100%);
-  --gradient-hero: linear-gradient(135deg, var(--color-black) 0%, #1a1a1a 100%);
+  --gradient-hero: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
 }
 
 body {
@@ -164,42 +164,83 @@ html {
 /* Theme toggle button */
 .theme-toggle {
   position: fixed;
-  top: 20px;
+  top: 50%;
   right: 20px;
+  transform: translateY(-50%);
   z-index: 1000;
   background: var(--bg-accent);
   border: 2px solid var(--border-color);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-medium);
+  box-shadow: var(--shadow-light);
   color: var(--text-primary);
   backdrop-filter: blur(10px);
 }
 
 .theme-toggle:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: var(--shadow-heavy);
+  transform: translateY(-50%) translateX(-2px) scale(1.08);
+  box-shadow: var(--shadow-medium);
   background: var(--bg-primary);
   border-color: var(--text-accent);
 }
 
 .theme-toggle:active {
-  transform: translateY(-1px) scale(1.02);
+  transform: translateY(-50%) translateX(-1px) scale(1.05);
+}
+
+/* Versão alternativa do theme toggle - mais integrada */
+.theme-toggle.integrated {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  transform: none;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-light);
+  opacity: 0.8;
+}
+
+.theme-toggle.integrated:hover {
+  opacity: 1;
+  transform: translateX(-2px) scale(1.05);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Versão com animação mais sutil */
+.theme-toggle.subtle {
+  background: rgba(var(--bg-accent), 0.8);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(var(--border-color), 0.3);
+}
+
+.theme-toggle.subtle:hover {
+  background: var(--bg-primary);
+  border-color: var(--text-accent);
+  backdrop-filter: blur(20px);
 }
 
 /* Media queries para responsividade do theme toggle */
 @media (max-width: 768px) {
   .theme-toggle {
-    width: 50px;
-    height: 50px;
-    top: 15px;
+    width: 40px;
+    height: 40px;
+    top: 50%;
     right: 15px;
+    transform: translateY(-50%);
+  }
+
+  .theme-toggle:hover {
+    transform: translateY(-50%) translateX(-2px) scale(1.08);
+  }
+
+  .theme-toggle:active {
+    transform: translateY(-50%) translateX(-1px) scale(1.05);
   }
 }
 
@@ -258,6 +299,7 @@ html {
   text-align: center;
   margin-bottom: 1rem;
   position: relative;
+  color: var(--text-primary) !important;
 }
 
 .section-title::after {
@@ -280,4 +322,47 @@ html {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Melhorias de contraste para modo light */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p, span, div {
+  color: var(--text-secondary);
+}
+
+/* Melhorar contraste em links */
+a {
+  color: var(--text-accent);
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+/* Melhorar visibilidade de botões */
+.btn {
+  color: var(--text-primary);
+}
+
+/* Garantir que gradients de texto sejam visíveis */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Melhorar contraste de placeholders */
+::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+input, textarea, select {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }

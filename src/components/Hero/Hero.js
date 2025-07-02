@@ -10,8 +10,8 @@ const Hero = () => {
             Bem-vindos ao <span className="highlight">EXD</span>
           </h1>
           <p className="hero-description">
-            Somos uma equipe de desenvolvedores apaixonados por tecnologia, 
-            criando soluções inovadoras e experiências digitais excepcionais.
+            Somos uma equipe de desenvolvedores focados em trazer a melhor 
+            solução para o seu negócio.
           </p>
           <div className="hero-buttons">
             <button 

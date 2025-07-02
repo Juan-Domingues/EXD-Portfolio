@@ -31,7 +31,7 @@ const ThemeToggle = () => {
       onClick={toggleTheme}
       title={isDark ? 'Alterar para modo claro' : 'Alterar para modo escuro'}
     >
-      {isDark ? <Sun size={24} /> : <Moon size={24} />}
+      {isDark ? <Sun size={20} /> : <Moon size={20} />}
     </button>
   );
 };
