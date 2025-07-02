@@ -50,8 +50,9 @@
   font-weight: 800;
   margin-bottom: 2rem;
   line-height: 1.1;
-  letter-spacing: -1px;
+  letter-spacing: -0.025em;  /* Ajuste específico para Inter */
   color: var(--color-light-gray);
+  font-feature-settings: 'liga' 1, 'kern' 1;  /* Ativa ligaduras e kerning da Inter */
 }
 
 .highlight {
@@ -76,8 +77,9 @@
   margin-bottom: 3rem;
   line-height: 1.7;
   opacity: 0.9;
-  font-weight: 300;
+  font-weight: 400;  /* Peso padrão do Inter para melhor legibilidade */
   color: var(--color-light-gray);
+  font-feature-settings: 'liga' 1;  /* Ativa ligaduras da Inter */
 }
 
 .hero-buttons {
@@ -91,7 +93,7 @@
   border: none;
   border-radius: 50px;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;  /* Peso semibold do Inter para botões */
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
@@ -101,8 +103,9 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.025em;  /* Letter spacing otimizado para Inter */
   text-transform: uppercase;
+  font-feature-settings: 'liga' 1, 'kern' 1;  /* Ativa recursos avançados da Inter */
 }
 
 .btn:focus {
