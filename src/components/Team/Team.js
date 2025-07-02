@@ -13,7 +13,7 @@ const Team = () => {
       description: "Especialista em UI/UX e React"
     },
     {
-      name: "Gabriel",
+      name: "Gabriel Teixeira",
       role: "Backend Developer",
       image: "/Imagens/gabriel.jpg",
       github: "https://github.com/Gabreu1",
@@ -21,7 +21,7 @@ const Team = () => {
       description: "Especialista em APIs e Node.js"
     },
     {
-      name: "GK",
+      name: "Gabriel Freitas",
       role: "FullStack Developer",
       image: "/Imagens/gk.jpg",
       github: "https://github.com/gkfreitas",
@@ -29,7 +29,7 @@ const Team = () => {
       description: "Especialista em APIs e bancos de dados"
     },
     {
-      name: "Nicolas",
+      name: "Nicolas Vasconcelos",
       role: "Comercial",
       image: "/Imagens/nicolas.jpg",
       github: "",
