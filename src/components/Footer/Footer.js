@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>
             © {currentYear} EXD. Todos os direitos reservados. 
-            Feito com <Heart size={16} className="heart" /> pela equipe Organo.
+            Feito com <Heart size={16} className="heart" /> pela equipe EXD.
           </p>
         </div>
       </div>

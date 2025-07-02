@@ -9,7 +9,7 @@
   overflow: hidden;
 }.btn-secondary {
   background: rgba(26, 26, 26, 0.08);  /* Fundo mais escuro para contraste */
-  color: #1a1a1a;  /* Texto mais escuro para melhor contraste */
+  color: #ffffff;  /* Texto mais escuro para melhor contraste */
   border: 2px solid #1a1a1a;  /* Borda escura para definir melhor o botão */
   box-shadow: 0 12px 30px rgba(26, 26, 26, 0.4);  /* Sombra mais escura */
   position: relative;
@@ -143,13 +143,15 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);  /* Gradiente mais escuro para melhor contraste */
-  color: #FEFCF9;  /* Texto claro */
-  box-shadow: 0 15px 35px rgba(26, 26, 26, 0.5);  /* Sombra mais forte e escura */
-  border: 2px solid #1a1a1a;  /* Borda escura visível */
+  background: #000000;  /* Fundo preto sólido para máximo contraste */
+  color: #ffffff;  /* Texto branco puro */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);  /* Sombra bem escura */
+  border: 3px solid #000000;  /* Borda preta mais espessa */
   animation: subtle-pulse 3s ease-in-out infinite;
   position: relative;
   overflow: hidden;
+  font-weight: 800;  /* Fonte extra pesada para máxima legibilidade */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);  /* Sombra sutil para clareza */
 }
 
 .btn-primary::before {
@@ -159,7 +161,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, #1a1a1a, #2c2c2c, #1a1a1a, #2c2c2c);
+  background: linear-gradient(45deg, #000000, #333333, #000000, #333333);
   background-size: 400% 400%;
   border-radius: inherit;
   z-index: -1;
@@ -183,16 +185,16 @@
 
 @keyframes subtle-pulse {
   0%, 100% { 
-    box-shadow: 0 15px 35px rgba(26, 26, 26, 0.5); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); 
   }
   50% { 
-    box-shadow: 0 20px 45px rgba(26, 26, 26, 0.7); 
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8); 
   }
 }
 
 [data-theme="dark"] .btn-primary {
   background: var(--color-light-gray);
-  color: #1a1a1a;  /* Texto muito escuro para contraste no modo dark */
+  color: #000000;  /* Texto muito escuro para contraste no modo dark */
   border: 2px solid var(--color-cream);
   animation: subtle-pulse-dark 3s ease-in-out infinite;
 }
@@ -207,26 +209,29 @@
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);  /* Gradiente invertido no hover */
-  color: #FEFCF9;  /* Texto claro mantido */
+  background: #333333;  /* Cinza escuro no hover */
+  color: #ffffff;  /* Texto branco mantido */
   transform: translateY(-6px);  /* Movimento mais pronunciado */
-  box-shadow: 0 25px 55px rgba(26, 26, 26, 0.6);
-  border-color: #2c2c2c;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.7);
+  border-color: #333333;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);  /* Sombra ainda mais intensa no hover */
 }
 
 [data-theme="dark"] .btn-primary:hover {
   background: var(--color-cream);
-  color: #1a1a1a;
+  color: #000000;
   border-color: var(--color-brown);
 }
 
 .btn-secondary {
-  background: rgba(139, 127, 107, 0.1);  /* Fundo levemente colorido */
-  color: #2f2f2f;  /* Texto escuro para modo light */
-  border: 2px solid #8B7F6B;  /* Borda brown */
-  box-shadow: 0 12px 30px rgba(139, 127, 107, 0.3);  /* Sombra com cor */
+  background: rgba(255, 255, 255, 0.95);  /* Fundo branco quase opaco */
+  color: #000000;  /* Texto preto puro para máximo contraste */
+  border: 3px solid #000000;  /* Borda preta mais espessa */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);  /* Sombra bem escura */
   position: relative;
   overflow: hidden;
+  font-weight: 800;  /* Fonte extra pesada para máxima legibilidade */
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);  /* Sombra branca para clareza */
 }
 
 .btn-secondary::before {
@@ -236,7 +241,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, transparent, #1a1a1a, transparent);
+  background: linear-gradient(45deg, transparent, #000000, transparent);
   border-radius: inherit;
   z-index: -1;
   opacity: 0;
@@ -253,11 +258,12 @@
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);  /* Gradiente escuro no hover */
-  color: #FEFCF9;  /* Texto claro no hover */
+  background: #000000;  /* Fundo preto sólido no hover */
+  color: #ffffff;  /* Texto branco no hover */
   transform: translateY(-6px);  /* Movimento mais pronunciado */
-  box-shadow: 0 22px 45px rgba(26, 26, 26, 0.5);
-  border-color: #2c2c2c;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.6);
+  border-color: #000000;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);  /* Sombra para clareza do texto branco */
 }
 
 [data-theme="dark"] .btn-secondary:hover {
