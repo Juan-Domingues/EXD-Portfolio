@@ -84,15 +84,15 @@ O site foi desenvolvido com design responsivo, garantindo uma experiência otimi
 
 ## 👥 Equipe
 
-- **João Paulo** - Full Stack Developer
-- **Gabriel** - Frontend Developer  
-- **GK** - Backend Developer
-- **Nicolas** - DevOps Engineer
-- **Vitu** - Mobile Developer
+- **Juan Domingues** - Frontend Developer
+- **Gabriel** - Backend Developer  
+- **GK** - Fullstack Developer
+- **Nicolas** - Comercial
+- **Victor** - Backend Developer
 
 ## 📞 Contato
 
-- **Email**: contato@organo.dev
+- **Email**: contato@exd.dev
 - **Telefone**: +55 (11) 99999-9999
 - **Localização**: São Paulo, SP - Brasil
 
@@ -102,7 +102,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-⭐ **Desenvolvido com ❤️ pela equipe Organo**
+⭐ **Desenvolvido com ❤️ pela equipe EXD**
 
 ### Analyzing the Bundle Size
 
