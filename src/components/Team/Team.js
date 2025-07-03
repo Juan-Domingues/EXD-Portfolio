@@ -7,7 +7,7 @@ const Team = () => {
     {
       name: "Juan Domingues",
       role: "Frontend Developer",
-      image: "/Imagens/eu.jpg",
+      image: "/Imagens/eu.jpeg",
       github: "https://github.com/Juan-Domingues",
       linkedin: "https://www.linkedin.com/in/juan-pablo-araujo-domingues-43b63722a/",
       description: "Especialista em UI/UX e React"
